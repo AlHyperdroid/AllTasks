@@ -9,8 +9,8 @@ import java.nio.channels.FileChannel;
 public class CopyPaste {
 
     public static void copyPaste()throws IOException {  //Копирование файла из одного места в другое
-        File sourceFile = new File("C:\\Users\\cortz\\OneDrive\\Документы\\Gdisk\\Универ\\Courses\\Lemon Java\\AllInOne\\src\\AnotherStrangeThing.txt");
-        File destFile = new File("C:\\Users\\cortz\\OneDrive\\Документы\\Gdisk\\Универ\\Courses\\Lemon Java\\AllInOne\\src\\io_task\\AnotherStrangeThing.txt");
+        File sourceFile = new File("C:(path)\\AnotherStrangeThing.txt");
+        File destFile = new File("C:(path)\\AnotherStrangeThing.txt");
 
         FileChannel source = null;
         FileChannel destination = null;
