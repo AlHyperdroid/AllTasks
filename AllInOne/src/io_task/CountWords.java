@@ -15,7 +15,7 @@ public class CountWords {
         String word5 = "на";
         String word6 = "по";
 
-        File file = new File("C:\\Users\\cortz\\OneDrive\\Документы\\Gdisk\\Универ\\Courses\\Lemon Java\\Luckmore.txt");
+        File file = new File("C:(path)\\Luckmore.txt");
         Scanner sc = new Scanner(new FileInputStream(file));
         int counter1 = 0;
         int counter2 = 0;
