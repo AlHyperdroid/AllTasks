@@ -1,8 +1,8 @@
 package hierarchy;
 
-public class SNoteI extends Samsung {
+public class SamsungNoteI extends Samsung {
 
-    public SNoteI(){
+    public SamsungNoteI(){
         this.setModel("Galaxy Note");
         this.setDisplayResolution("800x1280");
         this.setDisplaySize("5.3");

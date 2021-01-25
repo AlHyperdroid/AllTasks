@@ -200,60 +200,58 @@ public class TasksLogic {
 
     public static void switchTask() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Введите номер задания. Для выхода введите 0");
+        System.out.println("Введите номер задания");
         int task = sc.nextInt();
 
         switch (task) {
-            case 0:
-                break;
             case 1:
                 System.out.println("Результат деления " + divide(21, 8));
-                switchTask();
+                break;
             case 2:
                 System.out.println("Результат суммирования " + sumTwodigit(25));
-                switchTask();
+                break;
             case 3:
                 System.out.println("Результат округления " + round(2.5));
-                switchTask();
+                break;
             case 4:
                 System.out.println("Результат суммирования " + sumThreedigit(111));
-                switchTask();
+                break;
             case 5:
                 System.out.println("Ваш вес на луне приблизительно равен " + yourMoonWeight(68) + " кг");
-                switchTask();
+                break;
             case 6:
                 System.out.println("Результат увелечения значений " + Arrays.toString(arrayPlus()));
-                switchTask();
+                break;
             case 7:
                 System.out.println("Наибольшее число " + moreless(9, 6));
-                switchTask();
+                break;
             case 8:
                 System.out.println("Число: " + chetnechet(6));
-                switchTask();
+                break;
             case 9:
                 System.out.println("Число: " + wholenumber(6.0));
-                switchTask();
+                break;
             case 10:
                 consoleinput();
-                switchTask();
+                break;
             case 11:
                 tableX();
-                switchTask();
+                break;
             case 12:
                 System.out.println("С такой скоростью вам нужно ехать: " + speed() + "км/ч");
-                switchTask();
+                break;
             case 13:
                 hourssum();
-                switchTask();
+                break;
             case 14:
                 converterGrntoDlr();
-                switchTask();
+                break;
             case 15:
                 triangle(5, 7);
-                switchTask();
+                break;
             case 16:
                 degrees();
-                switchTask();
+                break;
         }
     }
 }

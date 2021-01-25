@@ -1,7 +1,7 @@
 package name_task;
 
 public class WordConverter {
-    public String DoubleSystem(String s) {
+    public String doubleSystem(String s) {
 
         StringBuilder answer = new StringBuilder();
 
@@ -15,7 +15,7 @@ public class WordConverter {
 
         return answer.toString();
     }
-    public String HexSystem(String s) {
+    public String hexSystem(String s) {
 
         StringBuilder answer = new StringBuilder();
 
@@ -29,7 +29,7 @@ public class WordConverter {
 
         return answer.toString();
     }
-    public String DecimalSystem(String s) {
+    public String decimalSystem(String s) {
 
         StringBuilder answer = new StringBuilder();
 

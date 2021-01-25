@@ -1,24 +1,24 @@
 package hierarchy;
 
-public class HMain {
+public class HierarchyMain {
     public static void main(String [] args){
-        SNoteI sni = new SNoteI();
+        SamsungNoteI sni = new SamsungNoteI();
         System.out.println(sni.getModel() + " " + sni.getDisplayResolution() + " " + sni.getDisplaySize()
                 + " " + sni.getBattery() + " " + sni.getPen() + " " + sni.getOS());
 
-        SNoteII snii = new SNoteII();
+        SamsungNoteII snii = new SamsungNoteII();
         System.out.println(snii.getModel() + " " + snii.getDisplayResolution() + " " + snii.getDisplaySize()
                 + " " + snii.getBattery() + " " + snii.getPen() + " " + snii.getOS());
 
-        SNoteIII sniii = new SNoteIII();
+        SamsungNoteIII sniii = new SamsungNoteIII();
         System.out.println(sniii.getModel() + " " + sniii.getDisplayResolution() + " " + sniii.getDisplaySize()
                 + " " + sniii.getBattery() + " " + sniii.getPen() + " " + sniii.getOS());
 
-        OX ox = new OX();
+        OppoX ox = new OppoX();
         System.out.println(ox.getModel() + " " + ox.getDisplayResolution() + " " + ox.getDisplaySize()
                 + " " + ox.getBattery() + " " + ox.getStretchableDisplay() + " " + ox.getOS());
 
-        HMateX hmx = new HMateX();
+        HuaweiMateX hmx = new HuaweiMateX();
         System.out.println(hmx.getModel() + " " + hmx.getDisplayResolution() + " " + hmx.getDisplaySize()
                 + " " + hmx.getBattery() + " " + hmx.getFoldable() + " " + hmx.getOS());
 

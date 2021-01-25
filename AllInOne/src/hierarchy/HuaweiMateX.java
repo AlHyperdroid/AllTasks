@@ -1,8 +1,8 @@
 package hierarchy;
 
-public class HMateX extends Huawei {
+public class HuaweiMateX extends Huawei {
 
-    public HMateX(){
+    public HuaweiMateX(){
         this.setModel("Mate X");
         this.setDisplayResolution("1148x2480");
         this.setDisplaySize("6.6");
