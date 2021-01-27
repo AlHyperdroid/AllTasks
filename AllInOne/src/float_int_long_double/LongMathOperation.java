@@ -29,8 +29,7 @@ public class LongMathOperation extends Operation {
             return result;
 //            throw new ArithmeticException(message);
         }
-        result = a.longValue()/b.longValue();
-        return result;
+        return a.longValue()/b.longValue();
     }
 
     public Number difference(Number a, Number b){

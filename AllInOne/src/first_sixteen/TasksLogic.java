@@ -9,16 +9,14 @@ public class TasksLogic {
 
     public static double divide(double a, double b) {
         System.out.println("Задача 1 Деление с остатком");
-        double c = a / b;
-        return c;
+        return a/b;
     }
 
-    public static int sumTwodigit(int n) {
+    public static int sumTwoDigit(int n) {
         System.out.println("Задача 2 Сумма цифр числа n(2х значное). Суммироемое число:" + n);
         int a = n / 10;
-        int b = (n / 1) - a * 10;
-        int sumn = (a + b);
-        return sumn;
+        int b = (n) - a * 10;
+        return a + b;
     }
 
     public static double round(double n) {
@@ -26,19 +24,17 @@ public class TasksLogic {
     return Math.round(n);
     }
 
-    public static int sumThreedigit(int n) {
+    public static int sumThreeDigit(int n) {
         System.out.println("Задача 4 Сумма цифр числа n(2х значное). Суммироемое число: " + n);
         int a = n / 10;
         int b = (n / 100) - a * 10;
         int c = n - b * 10 - a * 100;
-        int sumn = (a + b + c);
-        return sumn;
+        return a + b + c;
     }
 
     public static double yourMoonWeight(double yourweight) {
         System.out.println("Задача 5 Вес человека на луне");
-        double yourmoonweight = yourweight / 100 * 17;
-        return yourmoonweight;
+        return yourweight / 100 * 17;
     }
 
     public static int[] arrayPlus() {
@@ -58,11 +54,7 @@ public class TasksLogic {
 
     public static int moreless(int a, int b) {
         System.out.println("Задача 7 Поиск максимального. Сравниваемые числа: " + a + " и " + b);
-        if (a > b) {
-            return a;
-        } else {
-            return b;
-        }
+        return Math.max(a, b);
     }
 
     public static String chetnechet(int с) {
@@ -151,8 +143,7 @@ public class TasksLogic {
         int N = sc.nextInt();
         System.out.println("Введите время за которое нужно проехать");
         int T = sc.nextInt();
-        int S = N / T;
-        return S;
+        return N/T;
     }
 
     public static void hourssum() {
@@ -182,10 +173,10 @@ public class TasksLogic {
 
     public static void triangle(int a, int b) {
         System.out.println("Задача 15 Треугольник");
-        double hptn = Math.pow(a, 2) + Math.pow(b, 2);
-        double per = a + b + hptn;
-        int sqr = (a * b) / 2;
-        System.out.println("Гипотенуза равна: " + hptn + '\n' + "Площадь равна: " + sqr + '\n' + "Перимерт равен: " + per);
+        double hypotenuse = Math.pow(a, 2) + Math.pow(b, 2);
+        double perimeter = a + b + hypotenuse;
+        int square = (a * b) / 2;
+        System.out.println("Гипотенуза равна: " + hypotenuse + '\n' + "Площадь равна: " + square + '\n' + "Перимерт равен: " + perimeter);
     }
 
     public static void degrees() {
@@ -193,8 +184,8 @@ public class TasksLogic {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите сколько вам нужно градусв перевести");
         int cls = sc.nextInt();
-        double frngt = cls * 1.8 + 32;
-        String res = String.format("%.1f", frngt);
+        double fahrenheit = cls * 1.8 + 32;
+        String res = String.format("%.1f", fahrenheit);
         System.out.println("Ваша температура в фаренгейтах: " + res);
     }
 
@@ -208,13 +199,13 @@ public class TasksLogic {
                 System.out.println("Результат деления " + divide(21, 8));
                 break;
             case 2:
-                System.out.println("Результат суммирования " + sumTwodigit(25));
+                System.out.println("Результат суммирования " + sumTwoDigit(25));
                 break;
             case 3:
                 System.out.println("Результат округления " + round(2.5));
                 break;
             case 4:
-                System.out.println("Результат суммирования " + sumThreedigit(111));
+                System.out.println("Результат суммирования " + sumThreeDigit(111));
                 break;
             case 5:
                 System.out.println("Ваш вес на луне приблизительно равен " + yourMoonWeight(68) + " кг");

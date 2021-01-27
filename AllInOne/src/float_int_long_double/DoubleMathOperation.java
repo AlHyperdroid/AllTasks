@@ -29,8 +29,7 @@ public class DoubleMathOperation extends Operation {
             return result;
 //            throw new ArithmeticException(message);
         }
-        result = a.doubleValue()/b.doubleValue();
-        return result;
+        return a.doubleValue()/b.doubleValue();
     }
 
     public Number difference(Number a, Number b){

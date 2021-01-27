@@ -36,8 +36,7 @@ public class IntegerMathOperation extends Operation {
             return result;
 //            throw new ArithmeticException(message);
         }
-        result = a.intValue()/b.intValue();
-        return result;
+        return a.intValue()/b.intValue();
     }
 
     public Number difference(Number a, Number b){

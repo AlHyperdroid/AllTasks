@@ -29,8 +29,7 @@ public class FloatMathOperation extends Operation {
             return result;
 //            throw new ArithmeticException(message);
         }
-        result = a.floatValue()/b.floatValue();
-        return result;
+        return  a.floatValue()/b.floatValue();
     }
 
     public Number difference(Number a, Number b){
