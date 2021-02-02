@@ -3,71 +3,30 @@ package collections;
 import java.util.HashMap;
 import java.util.Map;
 
-class Faculty {
-    Integer id;
-    String namedep;
-
-    public Faculty(){
-
-    }
-
-    public Faculty(Integer id, String namedep){
-        this.id = id;
-        this.namedep = namedep;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setNamedep(String namedep) {
-        this.namedep = namedep;
-    }
-
-    public String getNamedep() {
-        return namedep;
-    }
-}
-
-class Department {
-    Integer idf;
-    String namething;
-
-    public Department(){
-
-    }
-
-    public Integer getIdf() {
-        return idf;
-    }
-
-    public void setIdf(Integer idf) {
-        this.idf = idf;
-    }
-
-    public String getNamething() {
-        return namething;
-    }
-
-    public void setNamething(String namething) {
-        this.namething = namething;
-    }
-
-}
-
 public class MapUniversity {
 
-    public void createUniversityMap(){
-        Faculty faculty = new Faculty();
-        Map<Integer, Faculty> university = new HashMap<>();
+    public static void createUniversityMap(){
+        Map<Integer, String> department = new HashMap<>();
+        department.put(1, "Smartphone");
+        department.put(2, "Memory card");
+        department.put(3, "Laptop");
+        department.put(4, "Pen");
+        department.put(4, "Notebook");
 
+        Map<String, Map<Integer, String>> faculty = new HashMap<>();
+        faculty.put("Department of Electronics and Control Systems", department);
+        faculty.put("Department of Systems and Technologies Modeling", department);
+        faculty.put("Department of Theoretical and Applied Systems Engineering", department);
+        faculty.put("Department of Artificial Intelligence and Software", department);
+        faculty.put("Department of Security of Information Systems and Technologies", department);
+
+        Map<String, Map<String, Map<Integer, String>>> university = new HashMap<>();
+        university.put("Computer Science", faculty);
+
+        System.out.println(university);
     }
 
 public static void main(String[] args) {
-
+    createUniversityMap();
     }
 }
