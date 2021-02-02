@@ -72,7 +72,7 @@ public class TasksLogic {
     public static String wholenumber(double x) {
         System.out.println("Задача 9 Целоеое ли число?");
         System.out.println("Ваше число для проверки:" + x);
-        if (ceil(x) == x) {
+        if(ceil(x) == x) {
             return "Целое";
         } else {
             return "Неа не целое";
