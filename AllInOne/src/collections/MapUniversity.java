@@ -11,7 +11,7 @@ public class MapUniversity {
         department.put(2, "Memory card");
         department.put(3, "Laptop");
         department.put(4, "Pen");
-        department.put(4, "Notebook");
+        department.put(5, "Notebook");
 
         Map<String, Map<Integer, String>> faculty = new HashMap<>();
         faculty.put("Department of Electronics and Control Systems", department);
@@ -26,7 +26,7 @@ public class MapUniversity {
         System.out.println(university);
     }
 
-public static void main(String[] args) {
-    createUniversityMap();
+    public static void main(String[] args) {
+        createUniversityMap();
     }
 }
