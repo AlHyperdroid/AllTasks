@@ -1,6 +1,7 @@
 package collections;
 
 public class NewLinkedList {
+
     class Element{
         String thing;
         Element perv;
@@ -34,7 +35,6 @@ public class NewLinkedList {
             return;
         }
 
-        System.out.println("Nodes:");
         while(curr != null) {
             System.out.println(curr.thing + " ");
             curr = curr.next;
@@ -44,7 +44,7 @@ public class NewLinkedList {
     public static void main(String[] args) {
 
         NewLinkedList linkedList = new NewLinkedList();
-
+        NewLinkedList linkedListI = new NewLinkedList();
         linkedList.addElement("this");
         linkedList.addElement("is");
         linkedList.addElement("smth");
@@ -52,5 +52,9 @@ public class NewLinkedList {
         linkedList.addElement("thing");
 
         linkedList.printElements();
+        linkedListI.printElements();
+
+        linkedListI.addElement("What is this");
+        linkedListI.printElements();
     }
 }
