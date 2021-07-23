@@ -48,6 +48,7 @@ public class CollectionsTest {
             balance.put("Денис", 99.22);
             balance.put("Антон", -19.08);
 
+
             // Показывает все балансы в хэш-таблицы.
             names = balance.keys();
 
@@ -61,11 +62,12 @@ public class CollectionsTest {
             bal = ((Double)balance.get("Маша")).doubleValue();
             balance.put("Маша", (bal + 1000));
             System.out.println("Новый баланс Маши: " + balance.get("Маша"));
+
         }
     private int hash(String key)
     {
         int hash = 0;
-
+        int size = 20;
         for(int i = 0; i < key.length(); i++)
             hash = (31 * hash + key.charAt(i)) % size;
 
